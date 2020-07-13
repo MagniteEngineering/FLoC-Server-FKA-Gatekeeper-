@@ -6,7 +6,7 @@
 
 Today, online advertising systems rely on 3rd party cookies to store the cross-publisher IDs  to group users into audience segments or cohorts using sophisticated algorithms based on their browsing behavior. Marketers use these cohorts to match advertising content to the users who are likely to be the most receptive. They are then able to record which users, and cohorts, generated better marketer success metrics (e.g., visited the marketer website, purchased the marketer’s product) to determine how to adjust their budgeting and targeting of future content.
 
-The ultimate goal of this system is to match marketing messages to user interests.. Users get to see more relevant ads, marketers get to reach a more receptive audience, and publishers get to more effectively monetize their content while lowering ad loads.  
+The ultimate goal of this system is to match marketing messages to user interests. Users get to see more relevant ads, marketers get to reach a more receptive audience, and publishers get to more effectively monetize their content while lowering ad loads.  
 
 However, the use of individual user ids across page domains creates numerous privacy problems, most notably the lack of relationship between the marketer and the user, specifically for prospects. As a result, there have been numerous proposals to eliminate the practice of sending identifiers from sellers to buyers. However, these proposals often self-contain the process of creating cohorts or groups entirely within a centralized organization, which is problematic for several reasons:
 
