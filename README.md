@@ -41,7 +41,7 @@ Supporting browsers would read the tags and execute a request first to prebid.or
 
 member=true
 
-then to the gatekeeper, if the browser does not have a set id in LS the gatekeeper will return one. 
+then to the gatekeeper, if the browser does not have a setUserID in LS the gatekeeper will return one. 
 
 ```
 {
