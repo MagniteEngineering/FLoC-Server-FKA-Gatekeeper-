@@ -108,7 +108,7 @@ This system would provide for the needed advertising functionality of both publi
 3. Gatekeeper un salts userId
 4. Gatekeeper adds user + data to cohort creation ML
 
-![Cohort Creation](https://user-images.githubusercontent.com/14223042/87161326-9c798200-c281-11ea-8504-18911b463e4e.png)
+![Cohort Creation](https://user-images.githubusercontent.com/14223042/87728431-4bd1bf80-c780-11ea-8b68-b4108e78666c.png)
 
 ### Cohort Retrieval
 1. User  loads Kings.com
