@@ -73,19 +73,62 @@ Publishers could use this Cohort ID for analytics purposes and forward it to mar
 This system would provide for the needed advertising functionality of both publishers and buyers while protecting users’ privacy.
 
 ### Use Cases
+
+#### Assumptions
+
+1. Kings and Lakers are in the federated set. 
+2. set membership verification returns TRUE (not shown)
+3. the set uses Gatekeeper 1
+
 #### GateKeeper Declaration (new user)
+
+1. User clears Gatekeeper id and loads Kings.com
+2. Browser verifies domain is a member of declared set
+3. GateKeeper declaration - browser sends domain, and contextual information about the site to gatekeeper 
+4. Gatekeeper sees that this browser+domain combo does not have an id so generates a domain specific value and returns it to the domain
+5. Logs inbound request & outbound response
+6. User navigates to lakers.com
+7. Lakers.com user id was cleared in step 1
+8. Browser verifies domain is a member of declared set
+9. GateKeeper declaration - browser sends domain, and contextual information about the site to gatekeeper
+10. Gatekeeper sees that this browser+domain combo does not have an id so generates a domain specific value and returns it to the domain
+11. Logs inbound request & outbound response
 
 ![GateKeeper Declaration (new user)](https://user-images.githubusercontent.com/14223042/87727366-14621380-c77e-11ea-88d1-ee23a8578b10.png)
 
-### GateKeeper Declaration (existing user)
+#### GateKeeper Declaration (existing user)
+
+1. User loads Kings.com
+2. Browser verifies domain is a member of declared set
+3. GateKeeper declaration - browser sends userID, domain, and contextual information about the site to gatekeeper 
+4. Gatekeeper logs inbound request & outbound response
+5. Gatekeeper adds request data to cohort creation ML
+6. User navigates to lakers.com
+7. Browser verifies domain is a member of declared set
+8. GateKeeper declaration - browser sends userID, domain, and contextual information about the site to gatekeeper
+9. Gatekeeper logs inbound request & outbound response
+10. Gatekeeper adds request data to cohort creation ML
 
 ![GateKeeper Declaration (existing user)](https://user-images.githubusercontent.com/14223042/87727362-12985000-c77e-11ea-8e43-3d78544fa3c8.png)
 
-### Cohort Creation
+#### Cohort Creation
+
+1. User loads Kings.com
+2. GateKeeper declaration - browser sends userID, domain, and contextual information about the site to gatekeeper 
+3. Gatekeeper un salts userId
+4. Gatekeeper adds user + data to cohort creation ML
 
 ![Cohort Creation](https://user-images.githubusercontent.com/14223042/87728431-4bd1bf80-c780-11ea-8b68-b4108e78666c.png)
 
-### Cohort Retrieval
+#### Cohort Retrieval
+
+1. User  loads Kings.com
+2. Browser verifies domain is a member of declared set
+3. GateKeeper declaration - browser sends userID, domain, and contextual information about the site to gatekeeper 
+4. Gatekeeper un salts userId
+5. Gatekeeper queries cohort store w/ unsalted user 
+6. Gatekeeper returns cohort membership list
+
 
 ![Cohort Retrieval](https://user-images.githubusercontent.com/14223042/87727344-0dd39c00-c77e-11ea-93c1-2f56b4a60174.png)
 
