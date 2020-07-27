@@ -94,7 +94,7 @@ This system would provide for the needed advertising functionality of both publi
 10. Gatekeeper sees that this browser+domain combo does not have an id so generates a domain specific value and returns it to the domain
 11. Logs inbound request & outbound response
 
-![GateKeeper Declaration (new user)](https://user-images.githubusercontent.com/14223042/87727366-14621380-c77e-11ea-88d1-ee23a8578b10.png)
+![GateKeeper Declaration (new user)](https://user-images.githubusercontent.com/14223042/88583594-ae8f4a80-d00d-11ea-9f57-641227c2d200.png)
 
 #### GateKeeper Declaration (existing user)
 
@@ -109,7 +109,7 @@ This system would provide for the needed advertising functionality of both publi
 9. Gatekeeper logs inbound request & outbound response
 10. Gatekeeper adds request data to cohort creation ML
 
-![GateKeeper Declaration (existing user)](https://user-images.githubusercontent.com/14223042/87727362-12985000-c77e-11ea-8e43-3d78544fa3c8.png)
+![GateKeeper Declaration (existing user)](https://user-images.githubusercontent.com/14223042/88583592-adf6b400-d00d-11ea-92a9-8686cc0da71b.png)
 
 #### Cohort Creation
 
@@ -118,7 +118,7 @@ This system would provide for the needed advertising functionality of both publi
 3. Gatekeeper un salts userId
 4. Gatekeeper adds user + data to cohort creation ML
 
-![Cohort Creation](https://user-images.githubusercontent.com/14223042/87728431-4bd1bf80-c780-11ea-8b68-b4108e78666c.png)
+![Cohort Creation](https://user-images.githubusercontent.com/14223042/88583590-ad5e1d80-d00d-11ea-9767-f8ac29ac2d57.png)
 
 #### Cohort Retrieval
 
@@ -130,7 +130,7 @@ This system would provide for the needed advertising functionality of both publi
 6. Gatekeeper returns cohort membership list
 
 
-![Cohort Retrieval](https://user-images.githubusercontent.com/14223042/87727344-0dd39c00-c77e-11ea-93c1-2f56b4a60174.png)
+![Cohort Retrieval](https://user-images.githubusercontent.com/14223042/88583576-aafbc380-d00d-11ea-8635-144d7615ccf6.png)
 
 Notes:
 Users will be able to see which gatekeepers have data on them, and what cohorts they are a part of.
