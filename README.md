@@ -18,10 +18,10 @@ As such, we believe we need a system where more than one trusted entities have t
 
 ### Gatekeeper
 A “gatekeeper” is designed as a service to create cohorts from limited, defined user identifiers, and will live in a server side construct outside of the browser. It must be either a not for profit entity, some other limited entity with strict controls, or a browser. It should not be a for-profit entity, and the total number of gatekeepers should be strictly limited. The gatekeepers’ role is to receive common ids from members of a 1st party set and group  those users into cohorts.  The gatekeeper will then return an individual user ids cohort membership list to the publisher.  The response can be cached in the browser, or requested in real time during an ad impression event. 
-### First Party Set
-A collection of websites can agree to share a common user id between themselves for the purpose of building a cohort.  To ensure a level playing field and allow smaller publishers to more effectively compete with larger rivals, websites are not required to be owned by the same entity although they may be.  Members of a first party set must publish their membership list at a well known endpoint.  Browsers should then allow members of the set to pass a common user id set in a browser storage container between themselves.
+### Federated Set
+A collection of websites can agree to share a common user id between themselves for the purpose of building a cohort.  To ensure a level playing field and allow smaller publishers to more effectively compete with larger rivals, websites are not required to be owned by the same entity although they may be.  Members of a Federated set must publish their membership list at a well known endpoint.  Browsers should then allow members of the set to pass a common user id set in a browser storage container between themselves.
 ### Business rules
-1. Domains may elect to federate themselves together into a first party set operated by a single gatekeeper
+1. Domains may elect to federate themselves together into a Federated set operated by a single gatekeeper
 2. A domain may be a member of 1 first-party sets
 3. The set decides which gatekeeper to use
 4. Gatekeepers will assign the each domain in the set a unique id, that id may be passed from domain to gatekeeper along with TLD+1 & contextual information
