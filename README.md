@@ -82,34 +82,36 @@ This system would provide for the needed advertising functionality of both publi
 
 #### GateKeeper Declaration (new user)
 
-1. User clears Gatekeeper id and loads Kings.com
-2. Browser verifies domain is a member of declared set
+1. User clears Gatekeeper ids and loads Kings.com
+2. Browser verifies domain is a member of declared set (not shown)
 3. GateKeeper declaration - browser sends domain, and contextual information about the site to gatekeeper 
-4. Gatekeeper sees that this browser+domain combo does not have an id so generates a domain specific value and returns it to the domain
-5. Logs inbound request & outbound response
+4. Gatekeeper sees that this browser+domain combo does not have an userID so generates a domain specific value and returns it to the page
+5. Logs inbound request
 6. User navigates to lakers.com
 7. Lakers.com user id was cleared in step 1
 8. Browser verifies domain is a member of declared set
 9. GateKeeper declaration - browser sends domain, and contextual information about the site to gatekeeper
-10. Gatekeeper sees that this browser+domain combo does not have an id so generates a domain specific value and returns it to the domain
-11. Logs inbound request & outbound response
+10. Gatekeeper sees that this browser+domain combo does not have an id so generates a domain specific value and returns it to the page
+11. Logs outbound response
 
-![GateKeeper Declaration (new user)](https://user-images.githubusercontent.com/14223042/88583594-ae8f4a80-d00d-11ea-9f57-641227c2d200.png)
+
+![GateKeeper Declaration (new user)](https://user-images.githubusercontent.com/14223042/88702803-1060ba80-d0c9-11ea-8fe5-5f43fdda19b9.png)
 
 #### GateKeeper Declaration (existing user)
 
-1. User loads Kings.com
+1. User  loads Kings.com
 2. Browser verifies domain is a member of declared set
 3. GateKeeper declaration - browser sends userID, domain, and contextual information about the site to gatekeeper 
-4. Gatekeeper logs inbound request & outbound response
+4. Gatekeeper logs inbound request
 5. Gatekeeper adds request data to cohort creation ML
 6. User navigates to lakers.com
 7. Browser verifies domain is a member of declared set
 8. GateKeeper declaration - browser sends userID, domain, and contextual information about the site to gatekeeper
-9. Gatekeeper logs inbound request & outbound response
+9. Gatekeeper logs inbound request
 10. Gatekeeper adds request data to cohort creation ML
 
-![GateKeeper Declaration (existing user)](https://user-images.githubusercontent.com/14223042/88583592-adf6b400-d00d-11ea-92a9-8686cc0da71b.png)
+
+![GateKeeper Declaration (existing user)](https://user-images.githubusercontent.com/14223042/88702796-0dfe6080-d0c9-11ea-9b1b-8f93415fedd0.png)
 
 #### Cohort Creation
 
