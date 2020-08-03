@@ -1,4 +1,4 @@
-# Gatekeeper
+# FLoC+Server (FKA Gatekeeper)
 
 ## An Actional Proposal for Gatekeeper in Cohort Creation 
 
